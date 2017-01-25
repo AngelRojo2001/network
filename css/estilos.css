@@ -174,5 +174,16 @@ body {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+/*---------------------
+SECCION AGENCIA
+---------------------*/
+.agencia {
+  background: #12AFAF;
+  color: #fff; }
+
+.agencia img {
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=estilos.css.map */
