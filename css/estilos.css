@@ -79,17 +79,22 @@ body {
 .contenedor-bloque-buscar input[type="text"] {
   border: 0;
   border-radius: 5px 0 0 5px;
-  padding: 1rem; }
+  padding: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
 
 .contenedor-bloque-buscar input[type="submit"] {
   border: 0;
   border-radius: 0 5px 5px 0;
   background: #12AFAF;
   color: #fff;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto; }
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  padding: 0 1rem; }
 
 /* Estilo menu principal */
 #menu-principal {
@@ -319,5 +324,56 @@ SECCION ULTIMOS PROYECTOS
 .ultimos-proyectos .owl-prev:hover,
 .ultimos-proyectos .owl-next:hover {
   color: #009500; }
+
+/*------------------------------
+SECCION PIE DE PAGINA
+------------------------------*/
+.piedepagina {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem; }
+
+.piedepagina .redes-sociales {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.piedepagina .redes-sociales a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 .5rem;
+  opacity: .7;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+
+.piedepagina .redes-sociales a:hover {
+  opacity: 1; }
+
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #12AFAF;
+  text-decoration: none;
+  z-index: 99999;
+  line-height: 0;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #fff; }
 
 /*# sourceMappingURL=estilos.css.map */
