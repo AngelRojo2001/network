@@ -151,7 +151,7 @@ SECCION AGENCIA
 }
 
 /*------------------------------
-SECCIÓN TU MEJOR ELECCIÓN
+SECCION TU MEJOR ELECCIÓN
 ------------------------------*/
 .tu-mejor-eleccion h2 span {
     color: $principal;
@@ -179,7 +179,7 @@ SECCIÓN TU MEJOR ELECCIÓN
 }
 
 /*------------------------------
-SECCIÓN SERVICIOS
+SECCION SERVICIOS
 ------------------------------*/
 .servicios {
     background: url("../images/fondo-servicios.jpg") no-repeat center center;
@@ -222,4 +222,37 @@ SECCIÓN SERVICIOS
     opacity: 1;
     color: $principal;
     transition: all .5s ease;
+}
+
+/*------------------------------
+SECCION ULTIMOS PROYECTOS
+------------------------------*/
+.ultimos-proyectos a {
+    text-decoration: none;
+}
+.ultimos-proyectos a h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: $texto;
+}
+.ultimos-proyectos .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.ultimos-proyectos .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+}
+.ultimos-proyectos .owl-prev,
+.ultimos-proyectos .owl-next {
+    font-size: 3rem;
+    margin: 0 .5rem;
+    color: $principal;
+    transition: all .5s ease;
+}
+.ultimos-proyectos .owl-prev:hover,
+.ultimos-proyectos .owl-next:hover {
+    color: $secundario;
 }

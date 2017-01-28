@@ -188,7 +188,7 @@ SECCION AGENCIA
   display: block; }
 
 /*------------------------------
-SECCI├ôN TU MEJOR ELECCI├ôN
+SECCION TU MEJOR ELECCI├ôN
 ------------------------------*/
 .tu-mejor-eleccion h2 span {
   color: #12AFAF; }
@@ -215,7 +215,7 @@ SECCI├ôN TU MEJOR ELECCI├ôN
   min-height: 9rem; }
 
 /*------------------------------
-SECCI├ôN SERVICIOS
+SECCION SERVICIOS
 ------------------------------*/
 .servicios {
   background: url("../images/fondo-servicios.jpg") no-repeat center center;
@@ -280,5 +280,44 @@ SECCI├ôN SERVICIOS
   color: #12AFAF;
   -webkit-transition: all .5s ease;
           transition: all .5s ease; }
+
+/*------------------------------
+SECCION ULTIMOS PROYECTOS
+------------------------------*/
+.ultimos-proyectos a {
+  text-decoration: none; }
+
+.ultimos-proyectos a h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #111; }
+
+.ultimos-proyectos .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.ultimos-proyectos .owl-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .3rem 0; }
+
+.ultimos-proyectos .owl-prev,
+.ultimos-proyectos .owl-next {
+  font-size: 3rem;
+  margin: 0 .5rem;
+  color: #12AFAF;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+
+.ultimos-proyectos .owl-prev:hover,
+.ultimos-proyectos .owl-next:hover {
+  color: #009500; }
 
 /*# sourceMappingURL=estilos.css.map */

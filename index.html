@@ -13,6 +13,10 @@
     <!-- Cargando iconos -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <!-- Cargar galería de imágenes -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <!-- Carga de archivos css -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -168,12 +172,36 @@
             </div>
         </div>
     </main>
-    <section class="ultimos-proyectos">
-        <h2>Últimos proyectos</h2>
-        <a href="#">
-            <h4>App Lima travels</h4>
-            <img src="images/proyecto1.jpg" alt="Proyecto App Lima travels">
-        </a>
+    <section class="ultimos-proyectos py-3">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">Últimos proyectos</h2>
+            <div class="owl-carousel">
+                <a href="#">
+                    <h4>App Lima travels</h4>
+                    <img src="images/proyecto1.jpg" alt="Proyecto App Lima travels">
+                </a>
+                <a href="#">
+                    <h4>Apps Uber</h4>
+                    <img src="images/proyecto2.jpg" alt="Proyecto Apps Uber">
+                </a>
+                <a href="#">
+                    <h4>App Pizza Perú</h4>
+                    <img src="images/proyecto3.jpg" alt="Proyecto App Pizza Perú">
+                </a>
+                <a href="#">
+                    <h4>App Muebles Hoy</h4>
+                    <img src="images/proyecto4.jpg" alt="Proyecto App Muebles Hoy">
+                </a>
+                <a href="#">
+                    <h4>App Clima Perú</h4>
+                    <img src="images/proyecto5.jpg" alt="Proyecto App Clima Perú">
+                </a>
+                <a href="#">
+                    <h4>App Playa</h4>
+                    <img src="images/proyecto6.jpg" alt="Proyecto App Playa">
+                </a>
+            </div>
+        </div>
     </section>
     <footer class="piedepagina" role="contentinfo">
         <p>2016 &copy; NETWORK Todos los derechos reservados</p>
@@ -186,9 +214,34 @@
     <a href="#" class="ir-arriba">Ir arriba</a>
 
     <script src="js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-</body>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoWidth: false,
 
+            navText: ['<i class="fa fa-arrow-circle-left" title="Anterior"></i>', '<i class="fa fa-arrow-circle-right" title="Siguiente"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                500: {
+                    items: 2,
+                    margin: 20
+                },
+                800: {
+                    items: 3,
+                    margin: 20
+                },
+                1000: {
+                    items: 4,
+                    margin: 20
+                }
+            }
+        });
+    </script>
+</body>
 </html>
